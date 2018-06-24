@@ -12,7 +12,7 @@ class NeuralNetwork():
 
         for iteration in xrange(number_of_training_iterations):
             output = self.think(training_set_inputs)
-
+            print(output)
 
 
 
@@ -38,4 +38,4 @@ if __name__ == "__main__":
 
     # Train the neural network using a training set.
     # Do it 10,000 times and make small adjustments each time.
-    NeuralNetwork.train(training_set_inputs, training_set_outputs, 10000)
+    NeuralNetwork.trainModel(training_set_inputs, training_set_outputs, 10000)
